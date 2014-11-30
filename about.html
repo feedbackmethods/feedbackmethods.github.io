@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="feedbackApp">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>UTF - Ultimate Tool for choosing a Feedback method</title>
+		<meta name="generator" content="UTF - Ultimate Tool for choosing a Feedback method" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles2.css" rel="stylesheet">
+	</head>
+	<body ng-controller="MethodsCtrl as methodCtrl">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://feedbackmethods.github.io/">UTF - Ultimate Tool for choosing a Feedback method</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://github.com/feedbackmethods/feedbackmethods.github.io" target="_blank">GitHub</a></li>
+          </ul>
+          
+        </div>
+      </div>
+</nav>
+
+<div class="container-fluid">
+      
+      <div class="row row-offcanvas row-offcanvas-left">
+        
+         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation" ng-controller="TagFilterCtrl as tagsFilterCtrl">
+           
+            <ul class="nav nav-sidebar">
+            
+          
+
+            </ul>
+        </div><!--/span-->
+        
+        <div class="col-sm-9 col-md-10 main">
+          
+          <!--toggle sidebar button-->
+          <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          
+		  <h1 class="page-header">
+            UTF - Ultimate Tool for choosing a Feedback method
+            <p class="lead">(for the better interaction)</p>
+          </h1>
+
+          <h2 class="sub-header">About</h2>
+          <div>          
+            <p>Ultimate Tool for Feedback methods was originally made for a SCYPE course (a pedagogical course at Aalto University) in 2014. App might or might not be continued, but its source code and data is available at GitHub. You can also try to contact the lead developer of the project.</p> 
+            <p>What else we would like to put here?</p>
+            
+            <h3>Group members</h3>
+            <ul>
+                <li>
+                    <h4>Enrico Bartolino</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>Teemu Kinnunen</h4>
+                    <p>Lead developer</p>
+                </li>
+                <li>
+                    <h4>Niko Marola</h4>
+                    <p>Scrum Master</p>
+                </li>
+                <li>
+                    <h4>Ionnis Parissis</h4>
+                    <p></p>
+                </li>
+                <li>
+                    <h4>Jaeho Seol</h4>
+                    <p></p>
+                </li>
+                
+            </ul>
+          </div>
+
+      </div><!--/row-->
+	</div>
+</div><!--/.container-->
+
+<footer>
+  <p class="pull-right">©2014 Company</p>
+</footer>
+        
+	<!-- script references -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+    <!-- finally we can include our own shit -->
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
+	</body>
+</html>
