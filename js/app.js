@@ -1,7 +1,22 @@
 var app = angular.module('feedbackApp', []);
 
 app.controller("MethodsCtrl", function($scope, $http) {
-    this.methods = [];
+  this.methods = [];
+  
+  this.hasTag = function(methodName, tagName)
+  {
+  
+    for(i=0; i<$scope.methods.length; i++)
+    {
+        if($scope.methods[i].Name == methodName)
+        {
+            var method = $scope.methods[i];
+            if(method[tagName] == 1) { return 1; }
+            else { return 0; }
+        }
+    }
+  }
+    
   $http.get('data/feedbackmethods.json').
     success(function(data, status, headers, config) {
       $scope.methods = data;
@@ -13,6 +28,8 @@ app.controller("MethodsCtrl", function($scope, $http) {
     error(function(data, status, headers, config) {
       // log error
     });
+    
+    
 })
 
 app.directive('methodDescription', function() {
