@@ -56,7 +56,12 @@ footer {
   padding-top : 5px;
 }
 
-.nav-sidebar > .active > a {
+.nav-sidebar > li:hover {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.nav-sidebar > .active > a, .nav-sidebar > li > a:focus {
   color: #fff;
   background-color: #428bca;
 }
